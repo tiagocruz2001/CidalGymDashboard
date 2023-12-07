@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Dashboard</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                <i data-feather="maximize"></i>
+              </a></li>
+            <li>
+              <form class="form-inline mr-auto">
+                <div class="search-element">
+                  <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search" data-width="200">
+                  <button class="btn" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+          
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
+            </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+              <div class="dropdown-header">
+                Notificações
+                <div class="float-right">
+                  <a href="#">Marcar todas como lidas</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread"> <span
+                    class="dropdown-item-icon bg-primary text-white"> <i class="fas
+												fa-code"></i>
+                  </span> <span class="dropdown-item-desc"> Update <span class="time">2 minutos
+                      </span>
+                  </span>
+               
+
+              
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Ver todas <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/users/user-4.png"
+                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right pullDown">
+              <div class="dropdown-title">Bem-vindo Admin1</div>
+              <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+										fa-user"></i> Perfil
+             
+              </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                Configurações
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html"> <img alt="image" src="assets/img/hotel.png" class="header-logo" /> <span
+                class="logo-name">CidalGym</span>
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Menu</li>
+            <li class="dropdown">
+              <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="planos.html" class="nav-link"><i data-feather="monitor"></i><span>Planos</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                  data-feather="calendar"></i><span>Calendário</span></a>
+              <ul class="dropdown-menu">
+                
+                <li><a class="nav-link" href="calendar.html">Calendário</a></li>
+              </ul>
+            </li>
+            
+           
+            
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Aulas</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="aulas.html">Ver aulas</a></li>
+                <li><a class="nav-link" href="addaulas.html">Criar aula</a></li>
+     
+              </ul>
+
+            </li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="grid"></i><span>Gestão</span></a>
+              <ul class="dropdown-menu">
+                      <li><a class="nav-link" href="clientes.html">Clientes</a></li>
+                <li><a class="nav-link" href="funcionarios.html">Funcionários</a></li>
+                <li><a class="nav-link" href="maquinas.html">Máquinas</a></li>
+                <li><a class="nav-link" href="pagamentos.html">Pagamentos</a></li>
+                <li><a class="nav-link" href="despesas.html">Despesas</a></li>
+
+
+                
+                
+
+
+              </ul>
+            </li>
+            
+            
+            <li class="menu-header">Outras páginas</li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                  data-feather="user-check"></i><span>Autorizações</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="auth-login.html">Login</a></li>
+                <li><a href="auth-forgot-password.html">Password Esquecida</a></li>
+                <li><a href="auth-reset-password.html">Resetar Password</a></li>
+              </ul>
+            </li>
+           
+          
+            
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+      </div>  
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Clientes</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>Nome</th>
+                            <th>Nº de sócio</th>
+                            <th>Data de nascimento</th>
+                            <th>Email</th>  
+                            <th>Contacto</th>
+                            <th>NIF</th>
+                            <th>Data de adesão</th>
+                            <th>Plano</th>
+                            <th>Editar</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>José Fadoga</td>
+                            <th>#2311</th>
+                            <th>10-10-2003</th>
+                            <td>jose_fadoga@gmail.com</td>
+                            <td>935977988</td>
+                            <td>354637489</td>
+                            <td>22-03-2022</td>
+                            <td>1 mês</td>
+                          </td>
+                          <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                        </tr>
+
+                          </tr>
+                          <tr>
+                            <td>Maria Silva</td>
+                            <th>#1234</th>
+                            <th>05-08-1990</th>
+                            <td>maria_silva@gmail.com</td>
+                            <td>912345678</td>
+                            <td>123456789</td>
+                            <td>01-01-2022</td>
+                            <td>12 meses</td>
+                          </td>
+                          <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>João Santos</td>
+                            <th>#5678</th>
+                            <th>12-04-1985</th>
+                            <td>joao_santos@hotmail.com</td>
+                            <td>938765432</td>
+                            <td>987654321</td>
+                            <td>10-02-2022</td>
+                            <td>6 meses</td>
+                          </td>
+                          <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>Pedro Costa</td>
+                            <th>#9012</th>
+                            <th>30-11-1995</th>
+                            <td>pedro_costa@yahoo.com</td>
+                            <td>917654321</td>
+                            <td>456789123</td>
+                            <td>22-03-2022</td>
+                            <td>1 mês</td>
+                          </td>
+                          <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                        </tr>
+                        </tr>
+                       
+                        <tr>
+                            <td>Luís Oliveira</td>
+                            <th>#7890</th>
+                            <th>25-03-1976</th>
+                            <td>luis_oliveira@hotmail.com</td>
+                            <td>912345678</td>
+                            <td>123456789</td>
+                            <td>15-06-2022</td>
+                            <td>6 meses</td>
+                          </td>
+                          <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                        </tr>
+                        </tr>
+                        
+                    
+                      <tr>
+                          <td>Ana Sousa</td>
+                          <th>#3456</th>
+                          <th>18-07-1988</th>
+                          <td>ana_sousa@gmail.com</td>
+                          <td>939876543</td>
+                          <td>987654321</td>
+                          <td>01-05-2022</td>
+                          <td>12 meses</td>
+                        </td>
+                        <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                      </tr>
+                      </tr>
+                      <tr>
+                          <td>Luís Oliveira</td>
+                          <th>#7890</th>
+                          <th>25-03-1976</th>
+                          <td>luis_oliveira@hotmail.com</td>
+                          <td>912345678</td>
+                          <td>123456789</td>
+                          <td>15-06-2022</td>
+                          <td>6 meses</td>
+                        </td>
+                        <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                      </tr>
+                      </tr>
+                      <tr>
+                          <td>José Pereira</td>
+                          <th>#1111</th>
+                          <th>20-02-1992</th>
+                          <td>jose.pereira@gmail.com</td>
+                          <td>934567890</td>
+                          <td>987654321</td>
+                          <td>03-07-2022</td>
+                          <td>1 mês</td>
+                        </td>
+                        <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                      </tr>
+                      </tr>
+                      <tr>
+                          <td>Carla Fernandes</td>
+                          <th>#2222</th>
+                          <th>15-09-1987</th>
+                          <td>carla.fernandes@yahoo.com</td>
+                          <td>917654321</td>
+                          <td>123456789</td>
+                          <td>18-08-2022</td>
+                          <td>12 meses</td>
+                        </td>
+                        <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                      </tr>
+                      </tr>
+                      <tr>
+                          <td>Mário Santos</td>
+                          <th>#3333</th>
+                          <th>08-06-1993</th>
+                          <td>mario.santos@gmail.com</td>
+                          <td>938765432</td>
+                          <td>987654321</td>
+                          <td>05-09-2022</td>
+                          <td>6 meses</td>
+                        </td>
+                        <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                      </tr>
+                      
+                      </tr>
+
+                      <tr>
+                        <td>Rita Almeida</td>
+                        <th>#4444</th>
+                        <th>23-11-1991</th>
+                        <td>rita.almeida@gmail.com</td>
+                        <td>912345678</td>
+                        <td>123456789</td>
+                        <td>20-09-2022</td>
+                        <td>1 mês</td>
+                      </td>
+                      <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>André Marques</td>
+                        <th>#5555</th>
+                        <th>17-07-1997</th>
+                        <td>andre.marques@hotmail.com</td>
+                        <td>938765432</td>
+                        <td>987654321</td>
+                        <td>08-10-2022</td>
+                        <td>12 meses</td>
+                      </td>
+                      <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Sofia Oliveira</td>
+                        <th>#6666</th>
+                        <th>29-03-1984</th>
+                        <td>sofia.oliveira@yahoo.com</td>
+                        <td>917654321</td>
+                        <td>456789123</td>
+                        <td>15-11-2022</td>
+                        <td>6 meses</td>
+                      </td>
+                      <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>António Ferreira</td>
+                        <th>#7777</th>
+                        <th>12-06-1990</th>
+                        <td>antonio.ferreira@gmail.com</td>
+                        <td>939876543</td>
+                        <td>987654321</td>
+                        <td>01-12-2022</td>
+                        <td>1 mês</td>
+                      </td>
+                      <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Margarida Costa</td>
+                        <th>#8888</th>
+                        <th>05-02-1983</th>
+                        <td>margarida.costa@hotmail.com</td>
+                        <td>912345678</td>
+                        <td>123456789</td>
+                        <td>10-01-2023</td>
+                        <td>12 meses</td>
+                      </td>
+                      <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Hugo Santos</td>
+                        <th>#9999</th>
+                        <th>28-09-1989</th>
+                        <td>hugo.santos@gmail.com</td>
+                        <td>934567890</td>
+                        <td>987654321</td>
+                        <td>22-02-2023</td>
+                        <td>6 meses</td>
+                      </td>
+                      <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Marta Rodrigues</td>
+                        <th>#1010</th>
+                        <th>14-04-1994</th>
+                        <td>marta.rodrigues@yahoo.com</td>
+                        <td>917654321</td>
+                        <td>123456789</td>
+                        <td>05-03-2023</td>
+                        <td>1 mês</td>
+                      </td>
+                      <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>José Oliveira</td>
+                        <th>#1112</th>
+                        <th>06-12-1986</th>
+                        <td>jose.oliveira@gmail.com</td>
+                        <td>938765432</td>
+                        <td>987654321</td>
+                        <td>18-04-2023</td>
+                        <td>12 meses</td>
+                      </td>
+                      <td><a href="editcliente.html" class="btn btn-primary">Editar Cliente</a></td>
+                    </tr>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="card">
+          <div class="card-header">
+            <h4>Adicionar Cliente</h4>
+          </div>
+          <div class="card-body">
+            <div class="section-title mt-0">Nome</div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Primeiro e último nome</span>
+                </div>
+                <input type="text" class="form-control">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Selecionar plano </label>
+              <select class="form-control">
+                <option>1 mês</option>
+                <option>6 meses</option>
+                <option>12 mês</option>
+
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Nº telemóvel</label>
+              <input type="number" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>NIF</label>
+              <input type="number" class="form-control">
+            </div>
+            
+            
+            <div class="form-group">
+             
+              
+            </div>
+            
+            <div class="form-group">
+              <label>Data de nascimento</label>
+              <input type="date" class="form-control">
+            </div>
+            
+           
+            <div class="form-group">
+              <label>Fotografia</label>
+              <input type="file" class="form-control">
+            </div>
+            
+            
+            <div class="form-group">
+              <label class="d-block">Género</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Masculino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" checked>
+                <label class="form-check-label" for="exampleRadios2">
+                  Feminino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" checked>
+                <label class="form-check-label" for="exampleRadios2">
+                  Prefere não dizer
+                </label>
+              </div>
+            </div>
+           
+            
+           
+            
+            
+          </div>
+          <div class="card-footer text-right">
+            <button class="btn btn-primary mr-1" type="submit">Guardar</button>
+            <button class="btn btn-secondary" type="reset">Reset</button>
+          </div>
+        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+           
+          
+        </div>
+        <div class="settingSidebar">
+          <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
+          </a>
+          <div class="settingSidebar-body ps-container ps-theme-default">
+            <div class=" fade show active">
+              <div class="setting-panel-header">Configurar painel
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Seleciona o layout</h6>
+                <div class="selectgroup layout-color w-50">
+                  <label class="selectgroup-item">
+                    <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked>
+                    <span class="selectgroup-button">Claro</span>
+                  </label>
+                  <label class="selectgroup-item">
+                    <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout">
+                    <span class="selectgroup-button">Escuro</span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Cores do menu lateral</h6>
+                <div class="selectgroup selectgroup-pills sidebar-color">
+                  <label class="selectgroup-item">
+                    <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar">
+                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                      data-original-title="Claro"><i class="fas fa-sun"></i></span>
+                  </label>
+                  <label class="selectgroup-item">
+                    <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked>
+                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                      data-original-title="Escuro"><i class="fas fa-moon"></i></span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Cores</h6>
+                <div class="theme-setting-options">
+                  <ul class="choose-theme list-unstyled mb-0">
+                    <li title="white" class="active">
+                      <div class="white"></div>
+                    </li>
+                    <li title="ciano">
+                      <div class="cyan"></div>
+                    </li>
+                    <li title="preto">
+                      <div class="black"></div>
+                    </li>
+                    <li title="roxo">
+                      <div class="purple"></div>
+                    </li>
+                    <li title="laranja">
+                      <div class="orange"></div>
+                    </li>
+                    <li title="verde">
+                      <div class="green"></div>
+                    </li>
+                    <li title="vermelho">
+                      <div class="red"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <div class="theme-setting-options">
+                  <label class="m-b-0">
+                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                      id="mini_sidebar_setting">
+                    <span class="custom-switch-indicator"></span>
+                    <span class="control-label p-l-10">Mini menu lateral</span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <div class="theme-setting-options">
+                  <label class="m-b-0">
+                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                      id="sticky_header_setting">
+                    <span class="custom-switch-indicator"></span>
+                    <span class="control-label p-l-10"> Header</span>
+                  </label>
+                </div>
+              </div>
+              <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme">
+                  <i class="fas fa-undo"></i> Restaurar definições default
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          <a href="index.html">CidalGym</a></a>
+        </div>
+        <div class="footer-right">
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <!-- Page Specific JS File -->
+  <script src="assets/bundles/datatables/datatables.min.js"></script>
+  <script src="assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/bundles/datatables/export-tables/dataTables.buttons.min.js"></script>
+  <script src="assets/bundles/datatables/export-tables/buttons.flash.min.js"></script>
+  <script src="assets/bundles/datatables/export-tables/jszip.min.js"></script>
+  <script src="assets/bundles/datatables/export-tables/pdfmake.min.js"></script>
+  <script src="assets/bundles/datatables/export-tables/vfs_fonts.js"></script>
+  <script src="assets/bundles/datatables/export-tables/buttons.print.min.js"></script>
+  <script src="assets/js/page/datatables.js"></script>
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+</body>
+
+
+<!-- export-table.html  21 Nov 2019 03:56:01 GMT -->
+</html>
